@@ -1,256 +1,347 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!--[if !mso]><!-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--[if !mso]><!-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<!--<![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title></title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,700italic,500|Yellowtail&subset=cyrillic-ext,latin,cyrillic' rel='stylesheet' type='text/css'>
-	 <link rel="stylesheet" type="text/css" href="style.css"/>
+		<!--<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,700italic,500|Yellowtail&subset=cyrillic-ext,latin,cyrillic' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		/* CLIENT-SPECIFIC STYLES */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+			body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
 
- 
-  	<style type="text/css">
-   
-	/* CLIENT-SPECIFIC STYLES */
-	    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
-	    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
-	    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
-	    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
-	    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
-	    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+		    /* RESET STYLES */
 
-	    /* RESET STYLES */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table{border-collapse:collapse !important;}
+			body{height:100% !important; margin:0; padding:0; width:100% !important;}
+			@media screen and (max-width: 400px) {
+				.two-column .column {
+					max-width: 100% !important;
+				}
+			}
+			@media screen and (min-width: 401px) and (max-width: 620px) {
+				.two-column .column {
+					max-width: 50% !important;
+				}
+			}
+			body {
+				Margin: 0;
+				padding: 0;
+				min-width: 100%;
+				background-color: #ffffff;
+			}
 
-	    body{margin:0; padding:0;}
-	    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
-	    table{border-collapse:collapse !important;}
-	    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+			.wrapper {
+				width: 100%;
+				height: 100%;
+				table-layout: fixed;
+				-webkit-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+				background: url("img/background.jpg") no-repeat center 0;
+				background-repeat:repeat-y;
+			}
+			.webkit {
+				max-width: 600px;
+			}
 
-	</style>
-	<!--[if (gte mso 9)|(IE)]>
-	<style type="text/css">
-		table {border-collapse: collapse;}
-	</style>
-	<![endif]-->
-</head>
-  <body>
-  	<center class="wrapper" style="padding-bottom: 30px;">
-  		<div class="webkit">
+			/* Windows Phone Viewport Fix */
+			@-ms-viewport { 
+			    width: device-width; 
+			}
+
+			.outer {
+				Margin: 0 auto; /*для отцентровки в yahoo*/
+				width: 95%;
+				max-width: 600px;
+			}
+			.left-sidebar {
+				text-align: left;
+				font-size: 0;
+			}
+
+			.left-sidebar .column {
+				width: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.left-sidebar .left {
+				max-width: 120px;
+			}
+
+			.left-sidebar .right {
+				max-width: 415px;
+			}
+
+			.two-column {
+				text-align: center;
+				font-size: 0;
+			}
+
+			.two-column .column {
+				width: 100%;
+				max-width: 260px;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.contents {
+				width: 100%;
+			}
+		</style>
+		<!--[if (gte mso 9)|(IE)]>
+		<style type="text/css">
+			table {border-collapse: collapse;}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+		<center class="wrapper" style="padding-bottom: 30px;">
+			<div class="webkit">
 			<!--[if (gte mso 9)|(IE)]>
 			<table width="600" align="center"  cellpadding="0" cellspacing="0" border="0">
 			<tr>
 			<td>
 			<![endif]-->
-  			<table class="outer" cellpadding="0" cellspacing="0" border="0" align="center">
-  				<tr>
-					<td  class="preheader">   
-						<table cellpadding="0" cellspacing="0" border="0" width="100%">
-							<tr>
-								<td class="preheader-content" style=" text-align: center; font-family: 'Roboto', Helvetica, sans-serif; font-size:10px; font-weight:normal; padding: 30px 10px 10px 10px;" >
-									Если это письмо отображается некорректно, вы можете посмотреть полную версию в <a style="color: #e71743" href="#" target="_blank">браузере.</a>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td  class="header">
-					<table cellpadding="0" cellspacing="0" border="0" width="100%">
-						<tr>
-							<td class="header-content" bgcolor="#e71743" style="text-align:center; padding: 20px 10px">
-								<img class="logo" src="img/logo.png" width="187px" alt="Максимум">
-							</td>
-						</tr>
-					</table>
-				</td>
-				</tr>
-				<tr>
-					<td class="content">
-						<table cellpadding="0" cellspacing="0" border="0" width="100%">
-							<tr>
-								<td bgcolor="#e71743" style="text-align:center; font-family: 'Roboto', Helvetica, sans-serif; font-size:28px; color: #ffffff; font-weight:normal; padding: 10px 10px;">
-									Уважаемый клиент
-								</td>
-							</tr>
-							<tr>
-								<td bgcolor="#e71743" style="color:#ffffff;padding: 10px 15%; text-align: center; font-family:'Roboto', Helvetica, sans-serif; font-size: 20px; font-weight: notmal; line-height: 40px;">
-									Компания "Максимум" поздравляет Вас с наступающим Новым годом и Рождеством!
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="content"  bgcolor="#e71743" style="padding: 30px 20px; text-align: center;">
-					<!--[if (gte mso 9)|(IE)]>
-					<table width="395px" align="center" cellpadding="0" cellspacing="0" border="0">
-         				<tr>
-          				<td>
-    					<![endif]-->     
-						<table class="beard-wrapper" width="100%" style="max-width:395px" align="center" >
-							<tr>
-								<td>
-									<img src="img/beard.png" width="100%" alt="Бороды деда мороза">
-								</td>
-							</tr>
-						</table>
-					<!--[if (gte mso 9)|(IE)]>
-					</td>
-					</tr>
-					</table>
-					<![endif]-->
-					</td>
-				</tr>
-				<tr>
-					<td class="content">
-						<table cellpadding="0" cellspacing="0" border="0" width="100%">
-							<tr>
-								<td bgcolor="#e71743" style="padding: 20px 13%; color:#ffffff; font-family:'Roboto', Helvetica, sans-serif; font-size: 14px; line-height: 28px; text-align:center;">
-								Стрелки часов стремительно приближают нас к Новому году... Вы уже придумали, какой новогодний подарок хотите получить? Тогда поторопитесь: праздничный конкурс "Письмо Деду Морозу" для владельцев автомобиля HONDA в самом разгаре! Успейте написать письмо с заветным желанием до <span style="font-size: 16px; line-height: 28px; font-weight: bold; font-style: italic;">15&nbsp;декабря</span> — и ждите настоящих чудес!	
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td  class="content dream" >
-						<table cellpadding="0" cellspacing="0" border="0" width="100%">
-							<tr>
-								<td bgcolor="#e71743">
-									<img src="img/border-top.png" width="100%" border="0">
-								</td>
-							</tr>
-							<tr>
-								<td class="left-sidebar" bgcolor="#ffffff">
-									<!--[if (gte mso 9)|(IE)]>
-									<table width="100%">
-									<tr>
-									<td width="120">
-									<![endif]-->
-									<table class="column left" border="0" cellpadding="0" cellspacing="0">
-										<tr>
-											<td style="padding: 0 0 0 40px"> 
-												<img src="img/tree-icon.png" width="87">
-											</td>
-										</tr>
-									</table>
-									<!--[if (gte mso 9)|(IE)]>
-									</td><td width="500">
-									<![endif]-->
-									<table class="column right" border="0" cellpadding="0" cellspacing="0">
-										<tr>
-											<td style="color: #12445c; font-family: serif; font-style: italic; font-weight: bold; font-size: 21px; padding-left: 40px; padding-top: 5px;">От вашей мечты до собственной машины всего один шаг!</td>
-										</tr>
-									</table>
-									<!--[if (gte mso 9)|(IE)]>
+				<table class="outer" cellpadding="0" cellspacing="0" border="0" align="center">
+					<tr>
+						<td  class="preheader">   
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td class="preheader-content" style=" text-align: center; font-family: 'Roboto', Helvetica, sans-serif; font-size:10px; font-weight:normal; padding: 30px 10px 10px 10px;" >
+										Если это письмо отображается некорректно, вы можете посмотреть полную версию в <a style="color: #e71743" href="#" target="_blank">браузере.</a>
 									</td>
-									</tr>
-									</table>
-									<![endif]-->
-							</td>
-						</tr>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td  class="header">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td class="header-content" bgcolor="#e71743" style="text-align:center; padding: 30px 10px 30px 10px">
+										<img class="logo" src="img/logo.png" width="187px" alt="Максимум">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="content">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td bgcolor="#e71743" style="text-align:center; font-family: 'Roboto', Helvetica, sans-serif; font-size:28px; color: #ffffff; font-weight:normal; padding: 10px 10px;">
+										Уважаемый клиент
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#e71743" style="color:#ffffff;padding: 10px 15%; text-align: center; font-family:'Roboto', Helvetica, sans-serif; font-size: 20px; font-weight: notmal; line-height: 40px;">
+										Компания "Максимум" поздравляет Вас с наступающим Новым годом и Рождеством!
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="content" bgcolor="#e71743" style="padding: 30px 20px 10px 20px; text-align: center;">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="395px" align="center" cellpadding="0" cellspacing="0" border="0">
 						<tr>
-							<td bgcolor="#e71743">
-								<img src="img/border-bottom.png" width="100%">
-							</td>
+						<td>
+						<![endif]-->
+							<table class="beard-wrapper" width="100%" style="max-width:395px" align="center" >
+								<tr>
+									<td>
+										<img src="img/beard.png" width="100%" alt="Бороды деда мороза">
+									</td>
+								</tr>
+							</table>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
 						</tr>
-					</table>
-				</td>
-			</tr>
-				<tr>
-					<td bgcolor="#e71743" align="center" style="padding: 40px 20px; font-famiy:'Roboto', Helvetica, sans-serif; font-size: 20px;">
-						<table class="btn-wrapper">
-							<tr>
-								<td>
-									<div style="border: 3px solid #fff; border-radius: 4px;">
-										<a class="btn" href="#" target="_blank" style="font-family:'Roboto', Helvetica, sans-serif; font-weight:bold; font-size: 20px; display: inline-block; color:#ffffff; text-decoration: none; background: #e71743; border:solid #e71743; border-width: 17px 20px 14px; border-radius: 4px;">Заказать услугу</a>
-									</div>
-								</td>
-							</tr>
 						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="content">
-						<table table cellpadding="0" cellspacing="0" border="0" width="100%">
-							<tr>
-								<td  bgcolor="#e71743" align="center" style="color: #ffffff; padding: 20px 20px; font-family:'Roboto', Helvetica, sans-serif; font-size: 30px; line-height: 60px;">
-									До встречи в&nbsp;Новом&nbsp;году!
-								</td>
-							</tr>
-							<tr>
-								<td bgcolor="#e71743" align="center">
-									<img src="img/HOHOHO.png" width="188px" alt="HoHoHo!">
-								</td>
-							</tr>
-							<tr>	
-								<td bgcolor="#e71743" align="center" style="color: #ffffff; padding: 50px 20px 70px 20px; font-size: 25px; font-family:'Roboto', Helvetica, sans-serif; font-size: 20px; line-height: 30px;">
-									c любовью, <br>ваш Максимум
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="footer">
-						<table cellpadding="0" cellspacing="0" border="0" width="100%">
-							<tr>
-								<td  bgcolor="#e71743" class="footer-content" style="padding: 15px 15px; color: #ffffff; font-family:'Roboto', Helvetica, sans-serif; font-size: 13px; line-height: 21px; text-align: center;">
-									Следите за нашими новостями<br> и&nbsp;полезной информацией
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="footer-social-btn" style="padding: 20px 20px;" bgcolor="#e71743" style="text-align:center; font-size:0;">
+						<![endif]-->
+						</td>
+					</tr>
+					<tr>
+						<td class="content">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td bgcolor="#e71743" style="padding: 20px 13% 40px 13%; color:#ffffff; font-family:'Roboto', Helvetica, sans-serif; font-size: 14px; line-height: 28px; text-align:center;">
+									Стрелки часов стремительно приближают нас к Новому году... Вы уже придумали, какой новогодний подарок хотите получить? Тогда поторопитесь: праздничный конкурс "Письмо Деду Морозу" для владельцев автомобиля HONDA в самом разгаре! Успейте написать письмо с заветным желанием до <span style="font-size: 16px; line-height: 28px; font-weight: bold; font-style: italic;">15&nbsp;декабря</span> — и ждите настоящих чудес!	
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td  class="content dream" >
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td bgcolor="#e71743">
+										<img src="img/border-top.png" width="100%" border="0">
+									</td>
+								</tr>
+								<tr>
+									<td class="left-sidebar" bgcolor="#ffffff">
+										<!--[if (gte mso 9)|(IE)]>
+										<table width="100%">
+										<tr>
+										<td width="120">
+										<![endif]-->
+										<table class="column left" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="padding: 0 0 0 50px"> 
+													<img src="img/tree-icon.png" width="87">
+												</td>
+											</tr>
+										</table>
+										<!--[if (gte mso 9)|(IE)]>
+										</td><td width="500">
+										<![endif]-->
+										<table class="column right" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="color: #12445c; font-family: serif; font-style: italic; font-weight: bold; font-size: 21px; padding-left: 50px; padding-top: 5px; padding-right: 15px;">От вашей мечты до собственной машины всего один шаг!</td>
+											</tr>
+										</table>
+										<!--[if (gte mso 9)|(IE)]>
+										</td>
+										</tr>
+										</table>
+										<![endif]-->
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#e71743">
+										<img src="img/border-bottom.png" width="100%">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#e71743" align="center" style="padding: 40px 20px; font-famiy:'Roboto', Helvetica, sans-serif; font-size: 20px;">
+							<table class="btn-wrapper">
+								<tr>
+									<td>
+										<div style="border: 3px solid #fff; border-radius: 4px;">
+											<a class="btn" href="#" target="_blank" style="font-family:'Roboto', Helvetica, sans-serif; font-weight:bold; font-size: 20px; display: inline-block; color:#ffffff; text-decoration: none; background: #e71743; border:solid #e71743; border-width: 17px 20px 14px; border-radius: 4px;">Заказать услугу</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="content">
+							<table table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td  bgcolor="#e71743" align="center" style="color: #ffffff; padding: 20px 20px 30px 20px; font-family:'Roboto', Helvetica, sans-serif; font-size: 30px; line-height: 50px;">
+										До встречи в&nbsp;Новом&nbsp;году!
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#e71743" align="center">
+										<img src="img/HOHOHO.png" width="188px" alt="HoHoHo!">
+									</td>
+								</tr>
+								<tr>	
+									<td bgcolor="#e71743" align="center" style="color: #ffffff; padding: 50px 20px 70px 20px; font-size: 25px; font-family:'Roboto', Helvetica, sans-serif; font-size: 20px; line-height: 30px;">
+										c любовью, <br>ваш Максимум
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td  bgcolor="#e71743" class="footer-content" style="padding: 15px 15px; color: #ffffff; font-family:'Roboto', Helvetica, sans-serif; font-size: 13px; line-height: 21px; text-align: center;">
+										Следите за нашими новостями<br> и&nbsp;полезной информацией
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer-social-btn two-column" style="padding: 20px 20px;" bgcolor="#e71743">
 						<!--[if (gte mso 9)|(IE)]>
 						<table width="100%">
 						<tr>
 						<td width="50%" valign="top">
 						<![endif]-->
-						<table width="100%" style="max-width: 280px; display: inline-block; vertical-align: top;">
-							<tr>
-								<td style="text-align:center;"><a class="social-btn" style="font-size:12px; display: block; margin-right: 5px;"><img src="img/vk-icon.png"><span style="padding-left:7px;">вКонтакте</span></a></td>
-								<td><a class="social-btn" style="font-size:12px; display: block; margin-right: 5px;"><img src="img/inst-icon.png"><span style="padding-left:7px;">Instagram</span></a></td>
-							</tr>
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td><a class="social-btn" style="font-size:12px; border: 1px solid #ffffff;border-radius:4px;display: block; margin-right: 5px; cursor:pointer"><img src="img/vk-btn.png" width="100%"></a></td>
+												<td><a class="social-btn" style="font-size:12px; display: block; border: 1px solid #ffffff;border-radius:4px; margin-right: 5px; cursor:pointer"><img src="img/inst-btn.png" width="100%"></a></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td><a class="social-btn" style="font-size:12px; display: block; margin-right: 5px; border: 1px solid #ffffff;border-radius:4px; cursor:pointer"><img src="img/youtube-btn.png" width="100%"></a></td>
+												<td><a class="social-btn" style="font-size:12px; display: block; margin-right: 5px; border: 1px solid #ffffff;border-radius:4px; cursor:pointer"><img src="img/blog-btn.png" width="100%"></a></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
 						</table>
-						<table width="100%" style="max-width:280px; display: inline-block; vertical-align: top;">
-							<tr>
-								<td><a class="social-btn" style="font-size:12px; display: block; margin-right: 5px;"><img src="img/youtube-icon.png" ><span style="padding-left:7px;">YouTube</span></a></td>
-								<td><a class="social-btn" style="font-size:12px; display: block;"><img src="img/blog-icon.png" ><span style="padding-left:7px;">Наш блог</span></a></td>
-							</tr>
-						</table>							
-					</td>
-				</tr>
-				<tr>
-					<td class="footer">
-						<table cellpadding="0" cellspacing="0" border="0" width="100%">
-							<tr>
-								<td  bgcolor="#e71743" style="padding: 10px 30px 10px 30px; font-family:'Roboto', Helvetica, sans-serif; font-size: 14px; line-height: 30px; font-weight: 400; text-align: center; color: #ffffff;">
-									Санкт-Петербург, Торфяная дорога 8/3, т. 8 (812) 347-71-65
-								</td>
-							</tr>
-							<tr>
-								<td bgcolor="#e71743" style="padding: 0 20px 20px 20px; font-famiy:'Roboto', Helvetica, sans-serif; font-size: 13px; line-height: 16px; font-weight: 300; text-align: center; color: #ffffff;">
-									Вы получили данное письмо, потому что оставили свои контактные данные на одном из наших сайтов. Если вы больше не хотите получать эту рассылку, нажмите <a style="color:#ffffff;" href="#" target="_blank">отписаться</a>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
+						<![endif]-->
+						</td>
+					</tr>
+					<tr>
+						<td class="footer">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td  bgcolor="#e71743" style="padding: 10px 30px 10px 30px; font-family:'Roboto', Helvetica, sans-serif; font-size: 14px; line-height: 25px; font-weight: 400; text-align: center; color: #ffffff;">
+										Санкт-Петербург, Торфяная дорога 8/3, т. 8 (812) 347-71-65
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#e71743" style="padding: 0 20px 20px 20px; font-family:'Roboto', Helvetica, sans-serif; font-size: 13px; line-height: 16px; font-weight: 300; text-align: center; color: #ffffff;">
+										Вы получили данное письмо, потому что оставили свои контактные данные на одном из наших сайтов. Если вы больше не хотите получать эту рассылку, нажмите <a style="color:#ffffff;" href="#" target="_blank">отписаться</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
 			<!--[if (gte mso 9)|(IE)]>
 			</td>
 			</tr>
 			</table>
 			<![endif]-->
-  		</div>
-	  </center>
-  </body>
+			</div>
+		</center>
+	</body>
 </html>
-	  
-	  
 	
